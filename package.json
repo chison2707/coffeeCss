@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "@tailwindcss/cli -i ./src/input.css -o ./public/output.css --watch",
-    "start": "live-server public"
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/output.css --watch",
+    "start": "live-server public",
+    "dev": "concurrently \"npm run build:css\" \"npm run start\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.10",
-    "live-server": "^1.2.2",
+    "live-server": "^1.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
     "tailwindcss": "^4.1.10"
   }
 }
