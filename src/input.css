@@ -21,6 +21,18 @@
   @apply text-xs text-center rounded-full px-1.5;
 }
 
+.subHead {
+  @apply flex justify-center items-center mb-25;
+}
+
+.subHead__deco--line {
+  @apply w-8 h-px bg-gray-200;
+}
+
+.subHead__deco--label {
+  @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[12px] text-center;
+}
+
 @theme {
   --animate-slideDown: slideDown 1s ease-in-out;
   --color-coffee-50: #e1baaf;
