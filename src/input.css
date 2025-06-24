@@ -22,7 +22,9 @@
 }
 
 @theme {
-  --animate-slideDown: slideDown 4s ease-in-out;
+  --animate-slideDown: slideDown 1s ease-in-out;
+  --color-light-coffee: #C3855D;
+  --font-Karla: Karla, sans-serif;
 
   @keyframes slideDown {
     0% {
