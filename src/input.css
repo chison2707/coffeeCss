@@ -42,11 +42,12 @@
 }
 
 .feateured-mugs__hover--childen {
-  @apply absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden text-center group-hover:block group-hover:animate-fadeIn tracking-wider px-7 py-4 text-sm font-semibold cursor-pointer hover:bg-white/90
+  @apply absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden text-center group-hover:block group-hover:animate-fadeIn tracking-wider px-7 py-4 text-sm font-semibold cursor-pointer hover:bg-white/90;
 }
 
 @theme {
   --animate-slideDown: slideDown 1s ease-in-out;
+  --breakpoint-xs: 30rem;
   --animate-fadeIn: fadeIn 0.5s ease-in-out;
   --color-coffee-50: #e1baaf;
   --color-coffee-200: #C3855D;
